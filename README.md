@@ -1,6 +1,7 @@
 # advance-css
 Advance CSS concepts.
 
+---
 
 ## Targeted Selector
 
@@ -34,6 +35,7 @@ input[type="text"], input[type="email"] {
 
 ![Targeted Selector](img/1_targeted_selector.png)
 
+---
 
 ## nth-child Selector
 
@@ -84,6 +86,8 @@ li:nth-child(even) {
 
 ![nth-child Selector](img/2_nth-child.png)
 
+---
+
 ## Before & After Pseudo Class
 
 The `:after` selector is a **pseudo-class** that allows you to add content **after** selected element. This element is an inline elmenet.  The `:before` does the opposite.
@@ -130,3 +134,44 @@ header > h1 {
 ```
 
 ![before-after](img/3_before-after.png)
+
+---
+
+## Box Shadow
+
+Box shadow properties allows us to add shadows on our elements.
+
+```css
+.container {
+    display: flex;
+}
+
+.box {
+    padding: 1rem;
+    margin: 1rem;
+    background: coral;
+    color: #fff;
+
+    /* offset-x | offset-y | color */
+    box-shadow: 10px 10px teal;
+
+    /* offset-x | offset-y | blur-radius | color */
+    box-shadow: 5px 5px 20px teal;
+
+    /* Negative values */
+    box-shadow: -5px -5px 20px teal;
+
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+    box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, 0.3);
+
+    /* inset | offset-x | offset-y | color */
+    box-shadow: inset 3px 3px teal;
+
+    /* Multiple Shadows */
+    box-shadow: 3px 3px 10px teal, -3px -3px 10px olive;
+}
+```
+
+![box-shadow](img/4_box-shadow.png)
+
+---
