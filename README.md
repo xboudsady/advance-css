@@ -209,3 +209,66 @@ h1.d {
 ```
 
 ![text-shadow](img/5_text-shadow.png)
+
+---
+
+## CSS Variables
+
+CSS Variables allows us to store values that can later be used in other parts of our styling. This reduces the need to have duplicate properties.
+Use the `--` to declare a variable, and `var(-- )` to call the variable.
+
+```css
+:root {
+    --max-width: 960px;
+    --primary-color: steelblue;
+    --secondary-color: skyblue;
+    --light-color: #f4f4f4;
+    
+}
+
+.box {
+    --box-1-width: 1;
+    --box-2-width: 2;
+}
+
+    /* Add a Reset */
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.4;
+        background: var(--light-color);
+    }
+
+    header {
+        background-color: var(--primary-color);
+        border-bottom: 5px var(--secondary-color) solid;
+        color: #fff;
+        text-align: center;
+    }
+
+    .container {
+        display: flex;
+        margin: auto;
+        max-width: var(--max-width);
+    }
+
+    .box {
+        background-color: var(--primary-color);
+        border-bottom: 5px var(--secondary-color) solid;
+        color: #fff;
+        padding: 1rem;
+        margin: 1rem;
+    }
+
+    .box-1 {
+        flex: var(--box-1-width);
+    }
+
+    .box-2 {
+        flex: var(--box-2-width);
+    }
+```
