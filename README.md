@@ -175,3 +175,37 @@ Box shadow properties allows us to add shadows on our elements.
 ![box-shadow](img/4_box-shadow.png)
 
 ---
+
+## Text Shadow
+
+Test shadow properties allows us to add shadows on our text.
+
+```css
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 4rem;
+}
+
+h1.a {
+    /* h-shadow | v-shadow | color */
+    text-shadow: 0.2rem 0.2rem steelblue;
+}
+
+h1.b {
+    /* h-shadow | v-shadow | blue | color */
+    text-shadow: 0.4rem 03rem 0.7rem steelblue;
+}
+
+h1.c {
+    /* White Text */
+    color: #fff;
+    text-shadow: 0.2rem 0.2rem 1rem steelblue;
+}
+
+h1.d {
+    /* Negative Value */
+    text-shadow: -0.4rem -0.3rem 0.7rem steelblue;
+}
+```
+
+![text-shadow](img/5_text-shadow.png)
