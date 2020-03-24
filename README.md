@@ -272,3 +272,7 @@ Use the `--` to declare a variable, and `var(-- )` to call the variable.
         flex: var(--box-2-width);
     }
 ```
+
+![css-variables](img/6_css-variables.png)
+
+---
