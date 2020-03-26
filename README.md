@@ -276,3 +276,40 @@ Use the `--` to declare a variable, and `var(-- )` to call the variable.
 ![css-variables](img/6_css-variables.png)
 
 ---
+
+## Keyframe Animation 1
+
+We can use the attribute `animation` to handles the various different CSS properties, along with the `@keyframes` method to handle the request.
+
+```css
+body {
+    background: #333;
+}
+
+.box {
+    background: white;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    /* animation-name: animate1;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out; */
+    animation: animate1 5s forwards 1s ease-in-out;
+}
+
+@keyframes animate1 {
+    from {
+        top: 0;
+    }
+
+    to {
+        width: 600px;
+        background-color: red;
+        top: 300px;
+    }
+}
+```
