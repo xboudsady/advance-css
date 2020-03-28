@@ -277,7 +277,7 @@ Use the `--` to declare a variable, and `var(-- )` to call the variable.
 
 ---
 
-## Keyframe Animation 1
+## Keyframe Animation
 
 We can use the attribute `animation` to handles the various different CSS properties, along with the `@keyframes` method to handle the request.
 
@@ -378,3 +378,37 @@ body {
 ```
 
 ![keyframe-2](img/8_keyframe-animation-2.gif)
+
+## Transitions
+
+We can use the attribute `transition` to changes, use with the `pseudo class` properties.
+
+```css
+body {
+    background: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.box {
+    background: white;
+    width: 100px;
+    height: 100px;
+    /* transition-property: background;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out; */
+    /* transition-delay: 3s; */
+    transition: all 2s ease-in-out;
+}
+
+.box:hover {
+    background: red;
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+}
+```
+
+![transitions](img/9_transitions.gif)
