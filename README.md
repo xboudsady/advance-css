@@ -1,9 +1,22 @@
 # advance-css
 Advance CSS concepts.
 
+## Table of Contents
+
+* [Targeted Selector](#Targeted-Selector)
+* [nth-child Selector](#nth-child-Selector)
+* [Before & After Pseudo Class](#Before-&-After-Pseudo-Class)
+* [Box Shadow](#Box-Shadow)
+* [Text Shadow](#Text-Shadow)
+* [CSS Variables](#CSS-Variables)
+* [Keyframe Animation](#Keyframe-Animation)
+* [Transitions](#Transitions)
+
 ---
 
 ## Targeted Selector
+
+##### [Table of Contents](#Table-of-Contents)
 
 By using targetted type of selector, we can select specifi elements by relationship, such as Direct Child ` > `, Directly After ` + `, By Atttribute ` [ ] `, Specific Attribute values ` ='' `. 
 
@@ -38,6 +51,8 @@ input[type="text"], input[type="email"] {
 ---
 
 ## nth-child Selector
+
+##### [Table of Contents](#Table-of-Contents)
 
 The nth-child selctor allows us to select the child elements of the parents. It is a pseudo selector such as `:first` and `:last` to directly select from parents, but use the `nth-child()` method when select specific child elements. 
 
@@ -90,6 +105,8 @@ li:nth-child(even) {
 
 ## Before & After Pseudo Class
 
+##### [Table of Contents](#Table-of-Contents)
+
 The `:after` selector is a **pseudo-class** that allows you to add content **after** selected element. This element is an inline elmenet.  The `:before` does the opposite.
 
 ```css
@@ -139,6 +156,8 @@ header > h1 {
 
 ## Box Shadow
 
+##### [Table of Contents](#Table-of-Contents)
+
 Box shadow properties allows us to add shadows on our elements.
 
 ```css
@@ -178,6 +197,8 @@ Box shadow properties allows us to add shadows on our elements.
 
 ## Text Shadow
 
+##### [Table of Contents](#Table-of-Contents)
+
 Test shadow properties allows us to add shadows on our text.
 
 ```css
@@ -213,6 +234,8 @@ h1.d {
 ---
 
 ## CSS Variables
+
+##### [Table of Contents](#Table-of-Contents)
 
 CSS Variables allows us to store values that can later be used in other parts of our styling. This reduces the need to have duplicate properties.
 Use the `--` to declare a variable, and `var(-- )` to call the variable.
@@ -278,6 +301,8 @@ Use the `--` to declare a variable, and `var(-- )` to call the variable.
 ---
 
 ## Keyframe Animation
+
+##### [Table of Contents](#Table-of-Contents)
 
 We can use the attribute `animation` to handles the various different CSS properties, along with the `@keyframes` method to handle the request.
 
@@ -381,6 +406,8 @@ body {
 
 ## Transitions
 
+##### [Table of Contents](#Table-of-Contents)
+
 We can use the attribute `transition` to changes, use with the `pseudo class` properties.
 
 ```css
@@ -412,40 +439,3 @@ body {
 ```
 
 ![transitions](img/9_transitions.gif)
-
-## Transitions
-
-We can use the attribute `transform` to changes, use with the `pseudo class`, and `transitions` properties.
-
-```css
-body {
-    background: #333;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-}
-
-.box {
-    background: white;
-    width: 300px;
-    height: 300px;
-    /* transform: rotate(25deg); */
-    /* transform: skew(25deg); */
-    /* transform: scale(3); */
-    transition: all 1s ease-in-out;
-}
-
-
-.box:hover {
-    /* transform: rotate(180deg); */
-    /* transform: skew(25deg); */
-    /* transform: scale(2); */
-    /* transform: translateY(-100px); */
-    /* transform: translateX(-100px); */
-    /* transform: translate(100px, 100px); */
-    transform: translate3d(100px, 100px, 100px);
-}
-```
-
-![transform](img/10_transform-property.gif)
