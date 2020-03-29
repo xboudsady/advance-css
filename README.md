@@ -412,3 +412,40 @@ body {
 ```
 
 ![transitions](img/9_transitions.gif)
+
+## Transitions
+
+We can use the attribute `transform` to changes, use with the `pseudo class`, and `transitions` properties.
+
+```css
+body {
+    background: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.box {
+    background: white;
+    width: 300px;
+    height: 300px;
+    /* transform: rotate(25deg); */
+    /* transform: skew(25deg); */
+    /* transform: scale(3); */
+    transition: all 1s ease-in-out;
+}
+
+
+.box:hover {
+    /* transform: rotate(180deg); */
+    /* transform: skew(25deg); */
+    /* transform: scale(2); */
+    /* transform: translateY(-100px); */
+    /* transform: translateX(-100px); */
+    /* transform: translate(100px, 100px); */
+    transform: translate3d(100px, 100px, 100px);
+}
+```
+
+![transform](img/10_transform-property.gif)
